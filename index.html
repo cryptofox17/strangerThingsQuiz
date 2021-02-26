@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <!-- Start box div  -->
+
+        <div class="start-box" id="start-box">
+            <button class="start-btn" id="start-btn">Start</button>
+        </div>
+
+        <!-- Quiz box div -->
+
+        <div class="quiz-box" id="quiz-box">
+            <h2 class="question" id="question"> Question </h2>
+            <br>
+            <div class="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+                <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+                <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+
+            </div>
+        </div>
+
+        <!-- Score Board Div -->
+        <div class="score-board" id="score-board">
+            <h3>You have scored</h3>
+            <h1 class="score" id="score">0</h1>
+            <br>
+
+            <button class="replay-btn" id="replay-btn">Replay?</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
